@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>트라빙고</title>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  #page {
+    
+    margin: auto;
+    border: solid 0px #FF5E00;
+  }
+  li{
+    list-style: none; 
+  }
+  .clear{
+    clear: both;
+  }
+  header{
+    width: 1090px;
+    height: 130px;
+    margin:0 auto;
+    
+  }
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 304px;
+    height: 100px;
+    margin-left: -152px;
+    
+  }
+  nav{
+    padding-left: 450px;
+    text-align: center;
+    height: 80px;
+    margin: 0 auto;
+    border: solid 0px;
+    background-color: #FF5E00;  
+  }
+  .dropdown {
+    font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+    cursor: pointer;
+    position: relative;
+    display:inline-block;
+    width: 150px;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 25px;
+    font-size: 19px;
+    color: white;
+    
+  
+  }
+  .dropdownc{
+    text-decoration: none;
+    position: absolute;
+    display: none;
+    background-color: #cccccc;
+    width: 110px;
+    padding: 10px 10px;
+    color: black;
+    font-size: 17px;
+  }
+  .dropdown:hover .dropdownc {
+    display: block;
+    
+    
+  }
+  .main {
+    transition: width 0.5s;
+    }
+
+  .main: hover {
+    
+    color: blue;
+    
+  }
+
+  .dropdown:hover {
+    color: #cccccc;
+  }
+
+  
+  section{
+    
+    text-align: center;
+    
+    
+    border: solid 0px;
+  }
+  #recommend {
+    margin-top: -4px;
+    
+    background-color: #FF5E00;
+    height: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+  }
+  #box1 {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+    width: 392px;
+    height: 280px;
+    position: absolute;
+    border: solid 0px;
+    
+  }
+  
+  #box2 {
+    margin-top: 50px;
+    margin-left: 780px;
+    margin-bottom: 50px;
+    width: 392px;
+    height: 280px;
+    position: absolute;
+    border: solid 0px;
+  }
+  #box3 {
+    margin-top: 50px;
+    margin-left: 1280px;
+    margin-bottom: 50px;
+    width: 392px;
+    height: 280px;
+    position: absolute;
+    border: solid 0px;
+  }
+  
+  footer{
+    
+    height: 100px;
+    margin-top: 10px;
+    border: solid 0px;
+  }
+  #address{
+    float: left;
+    margin: 30px 0 0 20px;
+  }
+
+a{
+  font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+    cursor: pointer;
+}
+
+.loginarea {
+    position: absolute;
+    top: 59px;
+    right: 0;
+    width: 120px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#login {
+  font-weight: bold;
+    text-decoration: none;
+    color: #232323;
+    cursor: pointer;
+}
+
+#login,.loginarea span {
+    float: left;
+    display: inline-block;
+    height: 14px;
+    color: #232323;
+    line-height: 14px;
+    letter-spacing: 0;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.last{
+  background-color: #EAEAEA;
+  height: 200px;
+  margin-top: 100px;
+}
+#let{
+  padding-top: 50px;
+}
+
+h, td, tr, input, textarea, select, FORM
+ {
+   font-family:고딕;
+  font-size:1em;
+  border-radius:5px;
+  
+ }
+ 
+ table, FORM
+ {
+  border:1px solid rgba(36, 228, 172, 0.29);
+  border-spacing:15px;
+ }
+
+</style>
+</head>
+<body>
+  <div id="page">
+  <header>
+    <div id='logo'>
+        <h1><a id="main" href="https://jj22jh.github.io/">
+          <img src="pic/trav.jpg" alt="트라빙고" width="304px" height="130px">
+        </a></h1>
+    </div>
+    <div class="loginarea" style="width: 125px;">
+      <a id="login" href="login.html">로그인</a>
+      <span>|</span>
+      <a id="login" href="register.html">회원가입</a>
+    </div>
+  </header>
+  <div class='clear'></div>
+    <nav> 
+          <div class="dropdown"><ul>아시아
+            <div class="dropdownc"><a id="main" href="japan.html">
+              <li>일본</li>
+            </a>
+            <li><a id="main" href="https://jj22jh.github.io/">
+            싱가폴
+            </a></li>
+            <li><a id="main" href="https://jj22jh.github.io/">
+            필리핀
+            </a></li>
+          </div>
+          </div>
+          </ul>
+          <div class="dropdown"><ul>유럽
+            <div class="dropdownc"><li><a id="main" href="https://jj22jh.github.io/">이탈리아
+            </a></li>
+            <li><a id="main" href="https://jj22jh.github.io/">프랑스
+            </a></li>
+            <li><a id="main" href="https://jj22jh.github.io/">독일
+            </a></li>
+          </div>
+          </div>
+          </ul>
+          <div class="dropdown"><ul>아메리카
+            <div class="dropdownc">
+              <li><a id="main" href="https://jj22jh.github.io/">
+              미국
+              </a></li>
+            <li><a id="main" href="https://jj22jh.github.io/">멕시코
+            </a></li>
+            <li>
+            <a id="main" href="https://jj22jh.github.io/">콜롬비아
+            </a></li>
+          </div>
+          </div>
+          </ul>
+          <div class="dropdown"><ul>아프리카
+            <div class="dropdownc"><li><a id="main" href="https://jj22jh.github.io/">이집트
+            </a></li>
+            <li><a id="main" href="https://jj22jh.github.io/">남아공
+            </a></li>
+            <li><a id="main" href="https://jj22jh.github.io/">탄자니아
+            </a></li>
+          </div>
+          </div>
+          </ul>
+            <div class="dropdown"><ul>오세아니아
+          <div class="dropdownc"><li><a id="main" href="https://jj22jh.github.io/">오스트레일리아
+          </a></li>
+            <li><a id="main" href="https://jj22jh.github.io/">뉴질랜드
+            </a></li>
+            <li>
+            <a id="main" href="https://jj22jh.github.io/">파푸아뉴기니
+            </a></li>
+          </div>
+          </div>
+          </ul>
+        </ul>
+
+    </nav>
+    
+    <section>
+    <body style="background-color:">
+ <center>
+ <h1> 회원가입</h1>
+ <table boder = "" bgcolor = "#FF5E00" cellspacing = "1" >
+ <FORM>
+  <tr>
+
+   <td text-align="center">아이디 </td>
+   <td> 
+   <input type = "text" />
+   <input type = "button" value = "중복확인"/>
+   </td>
+  </tr>
+
+
+
+  <tr>
+   <td> 비밀번호 </td>
+   <td> <input type = "password"/> </td>
+  </tr>
+
+
+  <tr>
+   <td> 비밀번호 확인 </td>
+   <td> <input type = "password"/>&nbsp; </td>
+  </tr>
+
+  <tr>
+   <td> 성명 </td>
+   <td> <input type = "text"/> </td>
+  </tr>
+
+
+  <tr>
+   <td> 성별 </td>
+   <td> 
+    <input type = "radio" name = "gender"/ checked> 남자
+    <input type = "radio" name = "gender"/> 여자
+   </td>
+  </tr>
+
+
+
+
+  <tr>
+   <td> 이메일 </td>
+   <td>
+    <input type = "text"/> @ <input type = "text"/> &nbsp;&nbsp; 
+    <select>
+     <option> 직접입력 </option>
+     <option> naver.com </option>
+     <option> daum.net </option>
+     <option> nate.com </option>
+    </select>
+   </td>
+  </tr>
+
+
+
+
+  <tr>
+   <td> 주소 </td>
+   <td>
+    <input type = "text"/>
+    <input type = "button" value = "주소찾기"/>
+   </td>
+  </tr>
+  <tr>
+   <td> 상세주소 </td>
+   <td>
+    <input type = "text"/>
+   </td>
+  </tr>
+
+
+
+  <tr>
+   <td> 휴대폰 </td>
+   <td> 
+    <input type = "radio" name = "phone"/> SKT 
+    <input type = "radio" name = "phone"/> KT
+    <input type = "radio" name = "phone"/> LGU+
+   <br/>
+    <select>
+     <option> 010 </option>
+     <option> 011 </option>
+     <option> 016 </option>
+     <option> 018 </option>
+    </select> 
+    <input type = "text" size = "6"/> - <input type = "text" size = "6"/>
+   </td>
+  </tr>
+
+
+
+
+  <tr>
+   <td> 관심  </td>
+   <td>
+    <input type = "checkbox"/> 여행
+    <input type = "checkbox"/> 비행기
+    <input type = "checkbox"/> 유흥
+    <input type = "checkbox"/> 음식
+    <input type = "checkbox"/> 문화
+   </td>
+  </tr>
+
+
+
+  <tr>
+   <td> 자기소개  </td>
+   <td>
+    <textarea cols = "60" rows = "10"></textarea>
+   </td>
+  </tr>
+ </FORM>
+</table>
+
+<br/>
+
+
+<a href="index.html"><input type = "submit" value = "가입하기"/>
+<input type = "reset" value = "다시 입력"/>
+
+
+</center>
+    </div>
+    </section>
+
+    <footer>
+     
+      
+    </footer>
+
+    <aside>
+    <div class="last">
+      <div id="let">
+      ㈜ 트라빙고 / 대표이사 임주헌 / 서울시 종로구 삼봉로 94<br>
+사업자등록번호 101-86-73232 / 통신판매업 신고번호 : 2016-서울종로-0248 / 사업자 정보 확인<br>
+대표번호 02-6325-5201 / FAX 070-7758-5221 / 대표메일 jj22jh@naver.com<br>
+copyright © TRAVINGO Inc. All rights Reserved.
+    </div>
+  </div>
+  </aside>
+
+    </div>
+
+
+</body>
+</html>
