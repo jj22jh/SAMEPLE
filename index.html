@@ -74,20 +74,10 @@
 		
 		
 	}
-	.main {
-		transition: width 0.5s;
-		}
-
-	.main: hover {
-		
-		color: blue;
-		
-	}
-
+	
 	.dropdown:hover {
 		color: #cccccc;
 	}
-
 	
 	section{
 		
@@ -105,6 +95,15 @@
 		font-weight: bold;
 		color: white;
 	}
+	.tra {
+		transition: all 1s;
+	}
+
+	.tra:hover {
+		
+		width:120%;
+		height: 120%;
+	}
 	#box1 {
 		margin-top: 50px;
 		margin-left: 300px;
@@ -113,7 +112,13 @@
 		height: 280px;
 		position: absolute;
 		border: solid 0px;
+		transition: width 1s;
 		
+	}
+
+	#box1: hover {
+		width: 2500px;
+		height: 2500px;
 	}
 	
 	#box2 {
@@ -145,14 +150,12 @@
 		float: left;
 		margin: 30px 0 0 20px;
 	}
-
 a{
 	font-weight: bold;
     text-decoration: none;
     color: #232323;
     cursor: pointer;
 }
-
 .loginarea {
     position: absolute;
     top: 59px;
@@ -161,14 +164,12 @@ a{
     vertical-align: middle;
     white-space: nowrap;
 }
-
 #login {
 	font-weight: bold;
     text-decoration: none;
     color: #232323;
     cursor: pointer;
 }
-
 #login,.loginarea span {
     float: left;
     display: inline-block;
@@ -179,7 +180,6 @@ a{
     font-size: 14px;
     vertical-align: middle;
 }
-
 .last{
 	background-color: #EAEAEA;
 	height: 200px;
@@ -281,19 +281,19 @@ a{
 
 			<div id="box1">
 				<a  href="hotkaido.html">
-					<img src="pic/hot.jpg" height="280px" width="392px" class="main">
+					<img src="pic/hot.jpg" height="280px" width="392px" class="tra">
 				</a>
 			</div>
 
 			<div id="box2">
 				<a  href="https://jj22jh.github.io/">
-				<img src="pic/firence.jpg" height="280px" width="392px" class="main">
+				<img src="pic/firence.jpg" height="280px" width="392px" class="tra">
 				</a>
 			</div>
 
 			<div id="box3">
 				<a  href="https://jj22jh.github.io/"> 
-				<img src="pic/grand.jpg" height="280px" width="392px" class="main"> 
+				<img src="pic/grand.jpg" height="280px" width="392px" class="tra"> 
 			</a>
 			</div>
 			
